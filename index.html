@@ -23,12 +23,15 @@ background-color: #e8b159 !important;
 .page-link {
     color: #333;
 }
-    :is(.col-lg-7,.col-md-12,.col-sm-12) h3{
+       @media (min-width: 481px) and (max-width: 767px) {
+            :is(.col-lg-7,.col-md-12,.col-sm-12) h3{
         font-size:4vw;
     }
      :is(.col-lg-7,.col-md-12,.col-sm-12) p{
         font-size:3vw;
     } 
+        }
+
 </style>
     <script>
    $(document).on('click', '.navbar-nav>li>a, .navbar-brand, .dropdown-menu>a', function (e) {
